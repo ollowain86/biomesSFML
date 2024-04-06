@@ -1,6 +1,21 @@
 #include <iostream>
+#include "SFML/Graphics.hpp"
 
 int main()
 {
-	std::cout << "hi" << std::endl;
+	sf::RenderWindow window(sf::VideoMode(800,600), "Test Window");
+	sf::Event e;
+
+	while (window.isOpen())
+	{
+		while (window.pollEvent(e))
+		{
+			if (e.type == sf::Event::Closed)
+			{
+				window.close();
+			}
+		}
+	}
+
+	return 0;
 }
