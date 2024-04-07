@@ -12,9 +12,9 @@ public:
 	void createMap(sf::RenderWindow& window);
 private:
 	// variables and parameters
-	uInt32 m_worldWidth; // x-coordinate
-	uInt32 m_worldHeight; // y-coordinate
-
+	uInt32 m_worldWidth{ 1920U }; // x-coordinate
+	uInt32 m_worldHeight{ 1024U }; // y-coordinate
+	uInt32 m_numOfDivisions{ 16U }; // number of divisions for width and height
 	// methods
 
 	// this method sets the m_divisionForWidth & m_divisionForHeight vectors
