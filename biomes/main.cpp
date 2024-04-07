@@ -1,5 +1,7 @@
 #include <iostream>
 #include "SFML/Graphics.hpp"
+#include "perlinClass.h"
+#include "helpers.h"
 
 const int CELL_SIZE = 50;
 
@@ -41,6 +43,8 @@ int main()
         {0, 0, 1, 0},
         {0, 0, 0, 1}
     };
+
+    perlinClass perlinObj(1200, 900);
 
 	sf::RenderWindow window(sf::VideoMode(800,600), "Test Window");
 	sf::Event e;
