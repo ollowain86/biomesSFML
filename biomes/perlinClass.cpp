@@ -3,10 +3,5 @@
 
 void perlinClass::createMap(sf::RenderWindow& window)
 {
-	m_setDivisors();
-}
-
-void perlinClass::m_setDivisors()
-{
 
 }
