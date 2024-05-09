@@ -44,10 +44,14 @@ int main()
         {0, 0, 0, 1}
     };
 
-    perlinClass perlinObj(1200, 900);
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Test Window");
+    sf::Event e;
 
-	sf::RenderWindow window(sf::VideoMode(800,600), "Test Window");
-	sf::Event e;
+    uInt32 worldWidth = 1800;
+    uInt32 worldHeright = 1000;
+    uInt32 cellSize = 10;
+    perlinClass perlinObj(worldWidth, worldHeright, cellSize);
+    perlinObj.createMap(window);
 
 	while (window.isOpen())
 	{
